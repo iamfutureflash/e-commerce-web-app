@@ -1,6 +1,7 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import type { ProductCardProps } from "@/interface";
+import { useEffect } from "react";
 
 const ProductCard = ({
   id,
@@ -9,6 +10,14 @@ const ProductCard = ({
   image,
   category,
 }: ProductCardProps) => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
   return (
     <Link to={`/product/${id}/details`}>
       <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-scale-in">
