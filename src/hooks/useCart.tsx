@@ -9,7 +9,6 @@ import { toast } from "sonner";
 const useCart = () => {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
-  const [categories, setCategories] = useState<string[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [added, setAdded] = useState(false);
   const { addToCart, isProductPresentInCart } = useCartContext();
@@ -84,7 +83,7 @@ const useCart = () => {
     }
   };
 
-  return { product, loading, renderCartButton, categories };
+  return { product, loading, renderCartButton };
 };
 
 export default useCart;
