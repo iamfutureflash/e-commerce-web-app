@@ -77,7 +77,7 @@ const ProductDetail = () => {
               </div>
             </div>
             {renderCartButton()}
-            <p className="text-foreground/80 leading-relaxed mb-8">
+            <p className="text-foreground/80 leading-relaxed mb-8 mt-4 font-normal">
               {product.description}
             </p>
           </div>
