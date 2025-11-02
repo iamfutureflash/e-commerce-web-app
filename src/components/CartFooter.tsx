@@ -11,7 +11,7 @@ const CartFooter = () => {
 
   return (
     <Link to="/cart">
-      <footer className="fixed bottom-0 left-0 right-0 bg-primary text-primary-foreground shadow-lg z-50 cursor-pointer hover:opacity-90 transition-opacity">
+      <footer className="fixed bottom-0 left-0 right-0 bg-primary text-primary-foreground shadow-lg z-50 cursor-pointer hover:opacity-95 transition-opacity">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
